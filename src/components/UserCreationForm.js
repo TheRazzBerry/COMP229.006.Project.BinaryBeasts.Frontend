@@ -2,17 +2,23 @@ import React, { useState } from 'react';
 
 const UserCreationForm = () => {
   const [userName, setUserName] = useState('');
+  const [contact, setUserContact] = useState('');
+  const [adress, setUserAdress] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const createUser = () => {
     console.log('User created:', {
       userName,
+      contact,
+      adress,
       email,
       password,
     });
 
     setUserName('');
+    setUserContact('');
+    setUserAdress('');
     setEmail('');
     setPassword('');
   };
@@ -27,6 +33,21 @@ const UserCreationForm = () => {
           id="userName"
           value={userName}
           onChange={(e) => setUserName(e.target.value)}
+        />
+
+        <label htmlFor="contact">User Contact:</label>
+        <input
+          type="text"
+          id="contact"
+          value={contact}
+          onChange={(e) => setUserContact(e.target.value)}
+        />
+        <label htmlFor="adress">User Adress:</label>
+        <input
+          type="text"
+          id="adress"
+          value={adress}
+          onChange={(e) => setUserAdress(e.target.value)}
         />
 
         <label htmlFor="email">Email:</label>

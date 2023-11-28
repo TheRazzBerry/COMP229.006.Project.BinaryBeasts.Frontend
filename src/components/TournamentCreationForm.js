@@ -39,7 +39,7 @@ const TournamentCreationForm = () => {
           onChange={(e) => setStartDate(e.target.value)}
         />
 
-        <label htmlFor="endDate">End Date:</label>
+        <label htmlFor="endDate">Ending Date:</label>
         <input
           type="date"
           id="endDate"
