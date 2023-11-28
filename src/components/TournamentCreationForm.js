@@ -27,10 +27,11 @@ const TournamentCreationForm = () => {
           type="text"
           id="tournamentName"
           value={tournamentName}
-          onChange={(e) => setTournamentName(e.target.value)}
+          onChange={(e) => setTournamentName(e.target.values)}
         />
+        
 
-        <label htmlFor="startDate">Start Date:</label>
+        <label htmlFor="startDate">Starting Date</label>
         <input
           type="date"
           id="startDate"
@@ -48,6 +49,9 @@ const TournamentCreationForm = () => {
 
         <button type="button" onClick={createTournament}>
           Create Tournament
+        </button>
+        <button type="button" onClick={createTournament}>
+          Reset
         </button>
       </form>
     </div>
