@@ -11,6 +11,7 @@ export default function Root() {
                 <p>View active tournaments below</p>
             </div>
         </div>
+        <index />
         <ActiveTournaments />
     </>);
 }
