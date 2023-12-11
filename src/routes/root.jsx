@@ -1,6 +1,7 @@
 // Import Components
 import Navbar from "../components/nav/navbar";
 import ActiveTournaments from "../components/tournaments/ActiveTournaments";
+import TournamentPage from "../components/auth/Tournament";
 
 export default function Root() {
     return (<>
@@ -12,6 +13,7 @@ export default function Root() {
             </div>
         </div>
         <index />
+        < TournamentPage/>
         <ActiveTournaments />
     </>);
 }
